@@ -78,15 +78,13 @@
           const themeToggle = $('#theme-toggle');
           themeToggle.click(() => {
               // if it's light -> go dark
-              if(ref_mode==0){
+              if(themeStylesheet.href.includes('dark')){
                   themeStylesheet.href = 'light-theme.css';
                   document.getElementById('theme-toggle-text').innerText = 'Switch to dark mode';
-                  ref_mode=1;
-              } else if(ref_mode==1){
+              } else{
                   // if it's light -> go Dark
                   themeStylesheet.href = 'dark-theme.css';
                   document.getElementById('theme-toggle-text').innerText = 'Switch to light mode';
-                  ref_mode=0;
 
               }
           })
