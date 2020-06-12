@@ -1,0 +1,127 @@
+#sub-container{
+  height: 6.4vh;
+  width: 100%;
+  margin: 0 auto;
+}
+#theme-toggle-text{
+  float: left;
+  margin-top: 1.35vh;
+  font-size:2.56vh;
+  color: #fff;
+}
+@media only screen and (min-width: 1025px) {
+  #theme-toggle-text{
+    margin-left: 42vw;
+  }
+}
+
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+#calculator{
+  width: 56vmin ;
+  height: 89vh;
+  margin: 0 auto;
+  position: relative;
+  top: 3.2vh;
+  border-radius: 1.28vh;
+  box-shadow: 0 0.64vh 1.28vh 0 rgba(0,0,0,0.2), 0 0.96vh 3.2vh 0 rgba(0,0,0,0.19);
+}
+@media only screen and (max-width: 500px) {
+  #calculator{
+    width: 100vw;
+  }
+}
+
+/*
+
+  .operator, .number, .empty{
+  width: 8vw; 
+  height: 8vw; 
+  margin: 2.4vw;
+  }
+@media only screen and (min-height: 200vw) {
+  #calculator{
+    width: 100vw;
+  }
+  .operator, .number, .empty{
+  width: 8vw; 
+  height: 8vw; 
+  margin: 1vw;
+  }
+}*/
+
+#result{
+  height: 19.2vh;
+}
+#history{
+  text-align: left;
+  height: 3.2vh;
+  /*width: 48vh;*/
+  margin: 0 3.2vh;
+  margin-left: 20vw;
+  padding-top: 3.2vh;
+  font-size: 2.4vh;
+  float: right;
+}
+#output{
+  position: fixed;
+  right: auto;
+  text-align: left;
+  height: 9.6vh; /*60px*/
+  width: 56vw;
+  margin: 1.6vh 3.2vh;
+  padding-top: 5px;
+  
+  font-size: 4.8vh;
+  float: left;
+}
+#keyboard{
+  float: left;
+}
+.operator, .number, .empty{
+  width: 14.2%; /*50px*/
+  height: 9%; /*50px*/
+  margin: 5.4%;
+  float: left;
+  border-radius: 50%;
+  border-width: 0;
+  font-weight: bold;
+  font-size:3vh;
+}
+.operator, .number{
+  cursor: pointer;
+  box-shadow: 0 0.64vh 1.28vh 0 rgba(0,0,0,0.1), 0 0.96vh 3.2vh 0 rgba(0,0,0,0.1);
+}
+.operator:active, .number:active{
+  font-size: 2.6vh;
+}
+.operator:focus, .number:focus, .empty:focus{
+  outline: 0;
+}
+
+button:nth-child(4){
+  font-size: 3.2vh;
+  background-color: #20b2aa;
+}
+button:nth-child(8){
+  font-size: 3.2vh;
+  background-color: #ffa500;
+  padding-top: 1.6vh;
+}
+button:nth-child(12){
+  font-size: 3.2vh;
+  background-color: #f08080;
+}
+button:nth-child(16){
+  font-size: 3.2vh;
+  background-color: #7d93e0;
+}
+button:nth-child(20){
+  font-size: 3.2vh;
+  background-color: #9477af;
+}

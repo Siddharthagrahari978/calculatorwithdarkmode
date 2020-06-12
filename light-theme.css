@@ -1,0 +1,43 @@
+#toggle-switch-container{
+  background-color: #233E54;
+  
+}
+
+
+#bg{
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url("bgimg-light.jpg");
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+#calculator{
+  background-color: #eaedef;
+}
+
+#history{
+  color: #919191;  
+}
+
+
+
+
+
+
+.number, .empty{
+  background-color: #eaedef;
+}
+
+
+
+
+button:nth-child(1){
+  background-color: gainsboro;
+}
+button:nth-child(2){
+  background-color: gainsboro;
+}
+button:nth-child(3){
+  background-color: gainsboro;
+}

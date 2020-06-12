@@ -1,0 +1,51 @@
+#toggle-switch-container{
+  background-color: #060711;
+  
+}
+
+
+
+#bg{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("bgimg-dark.jpg");
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+#calculator{
+  background-color: #2C3033;
+}
+
+#history{
+  color: #c2c3c4;
+}
+#output{
+  color: aliceblue;
+}
+
+
+
+
+
+.operator, .number, .empty{
+  color: aliceblue;
+}
+.number, .empty{
+  background-color: #2C3033;
+}
+
+
+
+
+
+
+button:nth-child(1){
+  background-color: #3f4549;
+}
+button:nth-child(2){
+  background-color: #3f4549;
+}
+button:nth-child(3){
+  background-color: #3f4549;
+}
