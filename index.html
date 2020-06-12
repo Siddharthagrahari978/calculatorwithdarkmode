@@ -78,7 +78,7 @@
           const themeToggle = $('#theme-toggle');
           themeToggle.click(() => {
               // if it's light -> go dark
-              if(themeStylesheet.href.includes('dark')){
+              if(themeStylesheet.href=='dark-theme.css')){
                   themeStylesheet.href = 'light-theme.css';
                   document.getElementById('theme-toggle-text').innerText = 'Switch to dark mode';
               } else{
