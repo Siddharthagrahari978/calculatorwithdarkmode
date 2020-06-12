@@ -70,22 +70,24 @@
     <script src="script.js" type="text/javascript"></script>
     <script>
       //Dark Mode.............................................
-      var ref_mode=0;
+    var ref_mode=0;
       // this one is jut to wait for the page to load
       document.addEventListener('DOMContentLoaded', () => {
 
-          const themeStylesheet = $('#theme');
-          const themeToggle = $('#theme-toggle');
-          themeToggle.click(() => {
+          const themeStylesheet = document.getElementById('theme');
+          const themeToggle = document.getElementById('theme-toggle');
+          themeToggle.addEventListener('click', () => {
               // if it's light -> go dark
-              if(themeStylesheet.href=='dark-theme.css'){
+              if(ref_mode==0){
+                  ref_mode=1;
                   themeStylesheet.href = 'light-theme.css';
                   document.getElementById('theme-toggle-text').innerText = 'Switch to dark mode';
-              } else{
+              } else if(ref_mode==1){
                   // if it's light -> go Dark
+                  ref_mode=0;
                   themeStylesheet.href = 'dark-theme.css';
                   document.getElementById('theme-toggle-text').innerText = 'Switch to light mode';
-
+                   
               }
           })
       })
