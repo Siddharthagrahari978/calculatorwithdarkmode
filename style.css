@@ -27,40 +27,28 @@ body{
   height: 89vh;
   margin: 0 auto;
   position: relative;
-  top: 3.2vh;
+  top: 2vh;
   border-radius: 1.28vh;
   box-shadow: 0 0.64vh 1.28vh 0 rgba(0,0,0,0.2), 0 0.96vh 3.2vh 0 rgba(0,0,0,0.19);
 }
 @media only screen and (max-width: 500px) {
   #calculator{
-    width: 100vw;
+    width: 72vw;
+    height: 64vh;
+  }
+  #theme-toggle-text{
+    margin-left: 19vw;
   }
 }
 
-/*
 
-  .operator, .number, .empty{
-  width: 8vw; 
-  height: 8vw; 
-  margin: 2.4vw;
-  }
-@media only screen and (min-height: 200vw) {
-  #calculator{
-    width: 100vw;
-  }
-  .operator, .number, .empty{
-  width: 8vw; 
-  height: 8vw; 
-  margin: 1vw;
-  }
-}*/
 
 #result{
   height: 19.2vh;
 }
 #history{
   text-align: left;
-  height: 3.2vh;
+  height: 3vh;
   /*width: 48vh;*/
   margin: 0 3.2vh;
   margin-left: 20vw;
@@ -71,10 +59,9 @@ body{
 #output{
   position: fixed;
   right: auto;
-  text-align: left;
-  height: 9.6vh; /*60px*/
+  height: 9.1vh; /*60px*/
   width: 56vw;
-  margin: 1.6vh 3.2vh;
+  margin: 0 3.2vh;
   padding-top: 5px;
   
   font-size: 4.8vh;
@@ -85,13 +72,13 @@ body{
 }
 .operator, .number, .empty{
   width: 14.2%; /*50px*/
-  height: 9%; /*50px*/
-  margin: 5.4%;
+  height: 8.2%; /*50px*/
+  margin: 5%;
   float: left;
   border-radius: 50%;
   border-width: 0;
   font-weight: bold;
-  font-size:3vh;
+  font-size:2.5vh;
 }
 .operator, .number{
   cursor: pointer;
@@ -111,7 +98,7 @@ button:nth-child(4){
 button:nth-child(8){
   font-size: 3.2vh;
   background-color: #ffa500;
-  padding-top: 1.6vh;
+  padding-top: 1.2vh;
 }
 button:nth-child(12){
   font-size: 3.2vh;
